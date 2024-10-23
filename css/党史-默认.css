@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+header, .content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+header {
+    background-color: #FF5733; /* 修改为红色 */
+    color: white; 
+    text-align: center; 
+    padding: 30px 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+nav {
+    position: fixed; /* 固定位置 */
+    left: 0; /* 左对齐 */
+    top: 80px; /* 距离顶部的距离，确保在header下方 */
+    width: 200px; /* 设置固定宽度 */
+    background-color: #C70039; /* 修改为深红色 */
+    padding: 10px 0; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+nav a {
+    display: block; /* 使每个链接占满一行 */
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    margin: 5px 0; 
+    transition: background-color 0.3s; 
+    border-radius: 4px; 
+}
+nav a:hover {
+    background-color: #900C3F; /* 修改为更深的红色 */
+}
+.content {
+    margin-left: 220px; /* 留出空间给固定的导航栏 */
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+h1 {
+    font-size: 2.5em; 
+    margin: 0; 
+}
+h2 {
+    margin-top: 20px; 
+    font-size: 1.8em; 
+    color: #FF5733; /* 修改为红色 */
+    border-bottom: 2px solid #FF5733; /* 修改为红色 */
+    padding-bottom: 5px; 
+}
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    padding: 10px; 
+    background-color: rgba(240, 240, 240, 0.9); 
+    border-left: 4px solid #FF5733; /* 修改为红色 */
+    border-radius: 4px; 
+}
+@media (max-width: 600px) {
+    header { padding: 20px; }
+    h1 { font-size: 2em; }
+    nav { 
+        position: relative; /* 在小屏幕上相对定位 */ 
+        width: auto; /* 自动宽度 */
+    }
+    nav a { margin: 5px 0; }
+    .content { 
+        margin-left: 0; /* 不留左边距 */
+        padding: 15px; 
+    }
+}
+img {
+    max-width: 100%; /* 确保图片适应屏幕宽度 */
+    height: auto; /* 保持图片比例 */
+    margin: 10px 0; /* 图片上下间隔 */
+}
+ul {
+    list-style-type: none; /* 去掉列表项的默认样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+}

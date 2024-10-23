@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* 背景颜色 */
+    color: #333; /* 文字颜色 */
+}
+
+.navbar {
+    background-color: #C70039; /* 导航栏背景色 */
+    display: flex; /* 水平布局 */
+    justify-content: center; /* 居中对齐 */
+    padding: 10px 0; /* 内边距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
+.navbar a {
+    color: white; /* 链接文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    padding: 14px 20px; /* 内边距 */
+    margin: 0 10px; /* 左右间距 */
+    transition: background-color 0.3s; /* 过渡效果 */
+    border-radius: 5px; /* 圆角效果 */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #d8a80a; /* 悬停和当前链接高亮 */
+    font-weight: bold; /* 当前链接加粗 */
+}
+
+.content {
+    max-width: 800px; /* 最大宽度 */
+    margin: 20px auto; /* 自动水平居中 */
+    padding: 20px; /* 内边距 */
+    background-color: white; /* 内容背景颜色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+h1 {
+    font-size: 2.5em; /* 标题字体大小 */
+    text-align: center; /* 标题居中 */
+    color: #FF5733; /* 标题颜色 */
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    padding: 10px; 
+    background-color: rgba(240, 240, 240, 0.9); 
+    border-left: 4px solid #FF5733; /* 修改为红色 */
+    border-radius: 4px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* 垂直排列表单字段 */
+}
+
+label {
+    margin-top: 10px; /* 标签顶部间距 */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* 内边距 */
+    margin-top: 5px; /* 顶部间距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    width: 100%; /* 宽度100% */
+    box-sizing: border-box; /* 包括内边距和边框在内 */
+}
+
+input[type="submit"] {
+    margin-top: 15px; /* 顶部间距 */
+    padding: 10px; /* 内边距 */
+    border: none; /* 去掉边框 */
+    border-radius: 4px; /* 圆角 */
+    background-color: #007BFF; /* 背景色 */
+    color: white; /* 文字颜色 */
+    cursor: pointer; /* 鼠标指针样式 */
+    transition: background-color 0.3s; /* 过渡效果 */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* 悬停背景色 */
+}iframe {
+    width: 100%; /* 宽度100% */
+    height: 600px; /* 高度固定 */
+    border: none; /* 去掉边框 */
+    border-radius: 8px; /* 圆角效果 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    header { padding: 20px; }
+    h1 { font-size: 2em; }
+    nav { 
+        position: relative; /* 在小屏幕上相对定位 */ 
+        width: auto; /* 自动宽度 */
+    }
+    nav a { margin: 5px 0; }
+    .content { 
+        margin-left: 0; /* 不留左边距 */
+        padding: 15px; 
+    }
+}
